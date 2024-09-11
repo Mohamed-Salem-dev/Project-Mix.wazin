@@ -1,0 +1,29 @@
+html {
+  direction: rtl;
+  text-align: right;
+}
+
+.box-item-all ul li::after {
+  right: 0;
+}
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.bord-left {
+  border-right: 1px solid #fff;
+  border-left: none;
+  padding: 1rem 0;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .bord-left {
+    border-right: none;
+    border-left: none;
+    padding: 0;
+  }
+}

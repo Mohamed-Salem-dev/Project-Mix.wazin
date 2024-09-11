@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="A website that sells all products, such as washing machines, refrigerators, computer screens, and mobile phones"
+    />
+
+    <meta
+      name="keywords"
+      content="
+  web,
+  web design,
+  web development,
+  web developer,
+  frontend developer,
+  backend developer,"
+    />
+    <meta name="author" content="Mohamed Salem" />
+    <meta charset="utf-8" />
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <meta name="theme-color" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="google" content="notranslate" />
+    <title>Mohamed Salem</title>
+
+    <link rel="icon" href="images/Mohamed Salem.jpg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/rtl.css" /> -->
+
+    <style>
+      :root {
+        --main-color: #000;
+        --bg-color: #fff;
+      }
+    </style>
+    <!-- ================================================================================================================= -->
+  </head>
+
+  <body>
+    <!-- ================================================================================================================= -->
+    <!-- navbar -->
+    <nav class="">
+      <div class="box-navbar-comprehensive-first">
+        <div class="container">
+          <div class="box-menu-navbar-first">
+            <div class="item-icon-nav language-nav-2">
+              <ul class="">
+                <li>
+                  <a class="dropdown-item-2" href="/">
+                    <div>
+                      <img src="images/language/Arab.png" alt="" />
+                    </div>
+                    <span class="css-wuhtur">عربي </span>
+                  </a>
+                </li>
+
+                <!-- <li>
+              <a
+                class="dropdown-item-2"
+                href="/"
+              >
+                <div>
+                  <img src="images/language/English.png" alt="" />
+                </div>
+                <span class="css-wuhtur">English</span>
+              </a>
+            </li> -->
+              </ul>
+            </div>
+
+            <div class="box-Login-cart-heart">
+              <div class="box-icons-cart-heart box-icons-cart-heart-mob">
+                <button
+                  class="btn btn-search btn-search-nav"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSearchProducts"
+                >
+                  <i class="fa-regular fa-magnifying-glass"></i>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-cart-nav"
+                >
+                  <i class="fa-light fa-cart-shopping"></i>
+                  <div class="number-cart item-count-cart">0</div>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbarHeart"
+                  aria-controls="offcanvasNavbarHeart"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-heart-nav"
+                >
+                  <i class="fa-light fa-heart"></i>
+                  <div class="item-count count-heart heart__count">0</div>
+                </button>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btn-login-modal btn-join-us"
+              >
+                <span> Login</span>
+              </button>
+            </div>
+            <!-- --------------------------------------------- -->
+          </div>
+        </div>
+      </div>
+      <div class="box-navbar-comprehensive">
+        <div class="container">
+          <div class="box-menu-navbar">
+            <a class="navbar-logo-brand" href="">
+              <img src="images/logo-wazin.svg" alt="" />
+            </a>
+
+            <button class="btn btn-toggle-collapse" type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="box-collapse-nav">
+              <div class="box-mo-logo-xmark">
+                <a class="navbar-logo-brand" href="">
+                  <img src="images/logo-wazin.svg" alt="" />
+                </a>
+                <div>
+                  <button class="btn btn-xmark">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="box-items-links">
+                <li class="item-nav"><a class="link-nav" href="#">Home</a></li>
+                <li class="item-nav"><a class="link-nav" href="#">Abute</a></li>
+
+                <li class="item-nav box-Categories-nav">
+                  <a class="link-nav" href="#"
+                    >All Categories
+                    <span class="arrow-Categories">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                  </a>
+
+                  <div class="box-collapse-items">
+                    <div class="box-collapse-items-2">
+                      <div class="row">
+                        <div class="d-none-mo d-block-pc">
+                          <button class="btn btn-xmark-2">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                          </button>
+
+                          <div class="box-AllCategories-xmark-chevron">
+                            <h3 class="titel">All Categories</h3>
+                            <button class="btn btn-chevron">
+                              <i class="fa-solid fa-circle-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-3 col-full">
+                          <div class="box-items-Categories38">
+                            <ul class="Ul-Categories">
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-female"></i>
+                                    </span>
+                                    <span>Women's Clothing</span>
+                                  </div>
+                                </div>
+
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">Women's Clothing</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3>
+                                          <a href="">OUTWEAR &amp; SWEATERS</a>
+                                        </h3>
+                                        <ul class="">
+                                          <li><a href="/">Blazers</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Hoodies &amp; Sweatshirts</a
+                                            >
+                                          </li>
+                                          <li><a href="/">Trench</a></li>
+                                          <li><a href="/">Cardigans</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">BOTTOMS</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Skirts</a>
+                                          </li>
+                                          <li><a href="/">Shorts</a></li>
+                                          <li><a href="/">Jeans</a></li>
+                                          <li>
+                                            <a href="/">Pants &amp; Capris</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">ACCESSORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/"
+                                              >OUTWEAR &amp; SWEATERS</a
+                                            >
+                                          </li>
+                                          <li><a href="/">Headwear</a></li>
+                                          <li>
+                                            <a href="/">Baseball Caps</a>
+                                          </li>
+                                          <li><a href="/">Sunglasses</a></li>
+                                          <li><a href="/">Belts</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT SEARCH</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Panties</a>
+                                          </li>
+                                          <li><a href="/">Bras</a></li>
+                                          <li><a href="/">Shapers</a></li>
+                                          <li>
+                                            <a href="/">Bra &amp; Brief Sets</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-male"></i>
+                                    </span>
+                                    <span>Men's Clothing</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">Men's Clothing</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-male"></i>
+                                    </span>
+                                    <span>WATCHES</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">WATCHES</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-briefcase"></i>
+                                    </span>
+                                    <span>BAGS &amp; SHOES</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">BAGS &amp; SHOES</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-shopping-cart"></i>
+                                    </span>
+                                    <span>SHOES</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">SHOES</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa-solid fa-gem"></i>
+                                    </span>
+                                    <span>JEWELLERY</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">JEWELLERY</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-star"></i>
+                                    </span>
+                                    <span>ACCESSORIES</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">ACCESSORIES</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-child"></i>
+                                    </span>
+                                    <span>TOYS, KIDS &amp; BABY</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">
+                                        TOYS, KIDS &amp; BABY
+                                      </h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa-solid fa-volleyball"></i>
+                                    </span>
+                                    <span>SPORTS &amp; OUTDOORS</span>
+                                  </div>
+                                </div>
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">
+                                        SPORTS &amp; OUTDOORS
+                                      </h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="menu-item-li">
+                                <div class="sho-arrow Link-item-Categories">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="icon-item-Categories">
+                                      <i class="fa fa-anchor"></i>
+                                    </span>
+                                    <span>HEALTH &amp; BEAUTY</span>
+                                  </div>
+                                </div>
+
+                                <div class="sub-menu-dropdown-Categories38">
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h3 class="titel">HEALTH &amp; BEAUTY</h3>
+                                      <button class="btn btn-chevron-3">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="row box-sub-sub-dropdown-mo">
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3>
+                                          <a href="">OUTWEAR &amp; SWEATERS</a>
+                                        </h3>
+                                        <ul class="">
+                                          <li><a href="/">Blazers</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Hoodies &amp; Sweatshirts</a
+                                            >
+                                          </li>
+                                          <li><a href="/">Trench</a></li>
+                                          <li><a href="/">Cardigans</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">BOTTOMS</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Skirts</a>
+                                          </li>
+                                          <li><a href="/">Shorts</a></li>
+                                          <li><a href="/">Jeans</a></li>
+                                          <li>
+                                            <a href="/">Pants &amp; Capris</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">ACCESSORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/"
+                                              >OUTWEAR &amp; SWEATERS</a
+                                            >
+                                          </li>
+                                          <li><a href="/">Headwear</a></li>
+                                          <li>
+                                            <a href="/">Baseball Caps</a>
+                                          </li>
+                                          <li><a href="/">Sunglasses</a></li>
+                                          <li><a href="/">Belts</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT SEARCH</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Panties</a>
+                                          </li>
+                                          <li><a href="/">Bras</a></li>
+                                          <li><a href="/">Shapers</a></li>
+                                          <li>
+                                            <a href="/">Bra &amp; Brief Sets</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 my-2"
+                                    >
+                                      <div class="box-item-sub">
+                                        <h3><a href="">HOT CATEGORIES</a></h3>
+                                        <ul class="">
+                                          <li class="">
+                                            <a href="/">Dresses</a>
+                                          </li>
+                                          <li>
+                                            <a href="/">Blouses &amp; Shirts</a>
+                                          </li>
+                                          <li><a href="/">T-Shirts</a></li>
+                                          <li><a href="/">Tank Tops</a></li>
+                                          <li>
+                                            <a href="/"
+                                              >Jumpsuits &amp; Rompers</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- <div class="col-9 hied-box">
+                          <div class="row p-4 align-items-center">
+                            <div class="col-4">
+                              <div class="col1 box-img-sel">
+                                <img src="images/1-Categories.jpg" alt="" />
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="row g-3">
+                                <div class="col-12">
+                                  <div class="col2 box-img-sel-2">
+                                    <img src="images/2-Categories.jpg" alt="" />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="col3 box-img-sel-3">
+                                    <img src="images/3-Categories.jpg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-nav"><a class="link-nav" href="#">Blogs</a></li>
+                <li class="item-nav">
+                  <a class="link-nav" href="#">All Products </a>
+                </li>
+              </ul>
+              <div class="box-icons-cart-heart">
+                <button
+                  class="btn btn-search btn-search-nav"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSearchProducts"
+                >
+                  <i class="fa-regular fa-magnifying-glass"></i>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-cart-nav"
+                >
+                  <i class="fa-light fa-cart-shopping"></i>
+                  <div class="number-cart item-count-cart">0</div>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbarHeart"
+                  aria-controls="offcanvasNavbarHeart"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-heart-nav"
+                >
+                  <i class="fa-light fa-heart"></i>
+                  <div class="item-count count-heart heart__count">0</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ================================================================================================================= -->
+    <!-- modal-search-Products -->
+    <section class="box-modal-search-Products">
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalSearchProducts"
+        tabindex="-1"
+        aria-labelledby="modalSearchProductsLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalSearchProductsLabel">
+                Search products
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="input-group box-input-button-search">
+                  <input
+                    type="search"
+                    class="form-control"
+                    name="prod-search"
+                    id="prod-search"
+                    placeholder="Search for products...."
+                  />
+                </div>
+                <button type="submit" class="btn-search-submit btn">
+                  Save changes
+                </button>
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================================================================= -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/main.rtl.js"></script> -->
+    <!-- ================================================================================================================= -->
+  </body>
+</html>

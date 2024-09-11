@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>  <title>مرحباً بكم في وازن</title></title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+  <style>
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      /* padding: 20px 30px; */
+      font-family: "Cairo", sans-serif;
+      background-color: #eef5ff;
+      direction: rtl;
+    }
+
+    .clear-fix {
+      clear: both;
+    }
+
+    .box-nav {
+      padding: 10px 60px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .box-nav h1 {
+      color: #5a5d66;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .box-img-logo {
+      width: 150px;
+    }
+
+    .box-header {
+      position: relative;
+      height: 80vh;
+    }
+
+    .box-header img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .box-text-header {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 60px;
+    }
+
+    .box-text-header h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #2d52df;
+    }
+
+    .box-text-header p {
+      width: 40%;
+      color: #5a5d66;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 5px;
+    }
+
+    .d-flex {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .col-6 {
+      width: 50%;
+    }
+
+    .container {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    .titel-h2 {
+      font-size: 32px;
+    }
+
+
+    .ul-section-2 {
+      font-size: 20px;
+    }
+
+    .h2-titel-section-3 {
+      font-size: 32px;
+    }
+
+    .section-3 table img {
+      width: 80px;
+    }
+
+    .title-section-3 {
+      font-size: 38px;
+    }
+
+    .col-6-item {
+      width: 14%;
+    }
+
+    .justify-content-center {
+      justify-content: center;
+    }
+
+    .box-brnd img {
+      width: 60%;
+    }
+
+    .text-align-center {
+      text-align: center;
+    }
+
+    .img-header-mo {
+      display: none;
+    }
+
+    .img-header-pc {
+      display: block;
+    }
+
+    @media screen and (max-width:667px) {
+      .box-nav {
+        padding: 20px;
+      }
+
+      .box-img-logo {
+        width: 120px;
+      }
+
+      .box-nav h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .box-text-header p {
+        width: 55%;
+        line-height: 23px;
+        margin: 0;
+      }
+
+      .box-text-header {
+        right: 10px;
+      }
+
+      .box-text-header h2 {
+        font-size: 24px;
+      }
+
+      .box-text-header p {
+        font-size: 16px;
+      }
+
+      .box-header {
+        height: 26vh;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .titel-h2 {
+        font-size: 24px;
+      }
+
+      .ul-section-2 {
+        font-size: 18px;
+      }
+
+      .h2-titel-section-3 {
+        font-size: 20px;
+      }
+
+      .section-3 table img {
+        width: 50px;
+      }
+
+      .title-section-3 {
+        font-size: 18px;
+      }
+
+      .d-flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col-4 {
+        width: 20%;
+      }
+
+      .box-brnd img {
+        width: 80%;
+      }
+
+      .img-header-pc {
+        display: none;
+      }
+
+      .img-header-mo {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="box-nav">
+    <div class="box-img-logo">
+      <img style="width: 100%;" src="{{ asset('wazin-front/images/img/logo.png') }}" alt="">
+    </div>
+    <h1 class="mainHeader">تجارة الكترونية من المستقبل</h1>
+  </nav>
+  <!-- ========================================================== -->
+  <header>
+    <div>
+      <div class="box-header">
+        <img class="img-header-pc" src="{{ asset('wazin-front/images/img/header-pc.jpg') }}" alt="">
+        <img class="img-header-mo" src="{{ asset('wazin-front/images/img/header-mo.jpg') }}" alt="">
+        <div class="box-text-header">
+          <h2>سعداء بوجودك بيننا</h2>
+          <p style="font-size: 14px">الحل الشامل التوسع
+            يسهولة نحو التجارة الالكترونية سواء كنت رائد أعمال أو شركة ناشئة, فأن منصة وازن سوف
+            تمنحك القدرة علي الدخول في عالم التجرة الالكترونية دون عناء البحث عن نبرمجين او مصممين للمتاجر الالكترونية
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+      <div class="d-flex">
+        <div class="col-6 col-12">
+          <img style="width: 100%;" src="{{ asset('wazin-front/images/img/photo 1.jpg') }}" alt="">
+        </div>
+
+        <div style="background-color: #2d52df; padding: 10px 20px 5px; color: #fff;" class="col-6 col-12">
+          <div style="display: flex; align-items: center;">
+            <a href=""><img style="width: 40px;" src="{{ asset('wazin-front/images/img/icon 1.png') }}" alt=""></a>
+            <h2 style="margin-right: 5px;" class="titel-h2">بأمكانك بناء متجرك الالكتروني بنفسك</h2>
+          </div>
+          <ul style="padding: 10px 30px 10px 5px ;font-weight: 400;" class="ul-section-2">
+            <li style="padding: 6px 0; ">صمم متجرك بنفسك وأضف شعارك والصور المناسبة
+              والالوان التي ترغب بها</li>
+            <li style="padding: 6px 0;">صمم متجرك بنفسك وأضف شعارك والصور المناسبة
+              والالوان التي ترغب بها</li>
+            <li style="padding: 6px 0;">صمم متجرك بنفسك وأضف شعارك والصور المناسبة
+              والالوان التي ترغب بها</li>
+            <li style="padding: 6px 0;">صمم متجرك بنفسك وأضف شعارك والصور المناسبة
+              والالوان التي ترغب بها</li>
+            <li style="padding: 6px 0;">صمم متجرك بنفسك وأضف شعارك والصور المناسبة
+              والالوان التي ترغب بها</li>
+          </ul>
+          <h3 style="padding-inline-start: 20px; font-size: 24px;">ومزايا أكتر وأكتر وأكتر </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="padding: 40px 20px;" class="section-3">
+      <h2 style="color: #000; margin-bottom: 20px;
+      text-align: center;
+
+      font-weight: bold;" class="h2-titel-section-3">الربط بسهولة مع شركاء نجاح تجارتك</h2>
+
+      <div class="row justify-content-center box-brnd">
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/01.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/02.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/03.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/04.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/05.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/06.png') }}" alt=""></div>
+
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/07.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/08.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/09.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/10.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/11.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/12.png') }}" alt=""></div>
+
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/13.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/14.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/15.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/16.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/17.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/18.png') }}" alt=""></div>
+
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/19.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/20.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/21.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/22.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/23.png') }}" alt=""></div>
+        <div class="col-4 col-6-item text-align-center"><img src="{{ asset('wazin-front/images/img/24.png') }}" alt=""></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div style="position: relative;">
+      <img style="width: 100%;" src="{{ asset('wazin-front/images/img/slider 2.jpg') }}" alt="">
+      <div style="position: absolute; top: 0;
+      left: 0; width: 100%; height: 100%;">
+
+        <h2 style="text-align: center; display: flex;
+        align-items: center;
+
+        color: #fff;
+        justify-content: center ; width: 100%;
+        height: 100%;" class="title-section-3">تهانينا .. لقد خطوت الخطوة الأولي نحو النجاح في <br /> التجارة
+          الالكترونية</h2>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="padding: 40px 0;">
+      <table style="width: 30% ;margin: auto; ">
+        <tr>
+          <td style="text-align: center; padding: 10px 5px;"><a href=""><img style="width: 30px;" src="{{ asset('wazin-front/images/img/youtube.svg') }}"
+                alt=""></a></td>
+          <td style="text-align: center; padding: 10px 5px;"><a href=""><img style="width: 30px;" src="{{ asset('wazin-front/images/img/linkedin.svg') }}"
+                alt=""></a></td>
+          <td style="text-align: center; padding: 10px 5px;"><a href=""><img style="width: 30px;" src="{{ asset('wazin-front/images/img/x.svg') }}"
+                alt=""></a></td>
+          <td style="text-align: center; padding: 10px 5px;"><a href=""><img style="width: 30px;"
+                src="{{ asset('wazin-front/images/img/instagram.svg ') }}" alt=""></a>
+          </td>
+          <td style="text-align: center; padding: 10px 5px;"><a href=""><img style="width: 30px;" src="{{ asset('wazin-front/images/img/facebook.svg') }}"
+                alt=""></a></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</body>
+
+</html>

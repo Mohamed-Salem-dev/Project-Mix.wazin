@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-family: "Cairo", sans-serif;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", sans-serif;
+}
+
+.box-btn{
+  text-align: end;
+}
+
+input[tayp="email"]{
+  direction: ltr;
+}

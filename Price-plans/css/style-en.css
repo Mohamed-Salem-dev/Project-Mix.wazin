@@ -1,0 +1,393 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.box-item-tab-link {
+  text-align: center;
+  justify-content: center;
+  border: 1px solid rgba(159, 157, 163, 1);
+  padding: 0.5rem;
+  border-radius: 50px;
+  min-width: auto;
+  width: max-content;
+  margin: auto;
+  /* padding:.5rem 2rem; */
+  gap: 60px;
+}
+.box-item-tab-link .nav-link {
+  border-radius: 50px;
+}
+.box-item-tab-link .nav-link.active,
+.box-item-tab-link .show > .nav-link {
+  background-color: var(--mainColor);
+  border-radius: 50px;
+  color: #fff;
+}
+
+.box-item-tab-link .nav-link:hover {
+  background-color: var(--mainColor);
+  color: #fff;
+  border-radius: 50px;
+}
+
+.box-item-all {
+  border-radius: 16px;
+  border: 1px solid rgba(228, 225, 235, 1);
+  padding: 1.4rem 0;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.box-item-all .border-max {
+  border: 1px solid rgba(228, 225, 235, 1);
+}
+.box-item-all h4 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-inline-start: 1rem;
+}
+.box-item-all h5 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-inline-start: 1rem;
+}
+
+.box-item-all h5 span {
+  font-size: 16px;
+}
+
+.box-item-all ul {
+  padding-inline-start: 1rem;
+}
+.box-item-all ul li {
+  margin-top: 1rem;
+  position: relative;
+  padding-inline-start: 2rem;
+  padding-inline-end: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box-item-all ul li::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 0;
+  font-size: 16px !important;
+
+  position: absolute;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f00c";
+  color: var(--mainColor);
+  background-color: rgba(239, 232, 252, 1);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-item-all {
+  border: 1px solid var(--mainColor);
+  box-shadow: 0 0 30px #bbbbbb;
+}
+
+.box-link-subscribe-now {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  width: 100%;
+}
+
+.box-link-subscribe-now .link-subscribe-now-solid {
+  background-color: var(--mainColor);
+  padding: 1rem;
+  color: #fff;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.box-link-subscribe-now .link-subscribe-now-lighter {
+  background-color: transparent;
+  padding: 1rem;
+  color: rgba(20, 15, 31, 1);
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border: 1px solid rgba(20, 15, 31, 1);
+}
+
+.Best-Seller {
+  background-color: rgba(239, 232, 252, 1);
+  padding: 4px 24px 4px 24px;
+  font-size: 16px;
+  border-radius: 50px;
+  /* padding-inline-end: 1rem; */
+  margin-inline-end: 1rem;
+  color: var(--mainColor);
+}
+
+.slick-dots li button:before {
+  font-size: 1rem;
+  color: var(--mainColor);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--mainColor);
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  padding-bottom: 2rem;
+}
+/* ---------------------------------------------------------------------------------- */
+
+.box-head-Advantages {
+  background-color: var(--mainColor);
+  color: #fff;
+  padding: 0rem 0.8rem;
+  border-radius: 16px;
+}
+
+.bord-left {
+  border-left: 1px solid #fff;
+  padding: 1rem 0;
+  text-align: center;
+  padding-left: 1rem;
+}
+.Advantages {
+  padding: 1rem;
+}
+
+.box-tab-Advantages {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box-tab-Advantages .accordion-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 16px !important;
+  border: none;
+}
+.box-tab-Advantages .accordion-button {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0 10px #bbbbbb;
+  border-radius: 16px !important;
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.box-tab-Advantages .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0 10px #bbbbbb;
+  border-radius: 16px !important;
+  padding: 24px;
+}
+
+.box-True-mark-or-false-mark {
+  background-color: rgba(248, 247, 250, 1);
+  border-radius: 16px !important;
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10px; */
+  padding-inline-end: 2rem;
+}
+
+.box-True-mark-or-false-mark ul {
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+}
+
+.box-tab-Advantages .accordion-body {
+  padding: 0;
+  margin: 1rem 0;
+}
+.box-True-mark-or-false-mark .text-name {
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+.icon-mark-True {
+  position: relative;
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-mark-True::after {
+  position: absolute;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f00c";
+  color: var(--mainColor);
+  background-color: rgba(239, 232, 252, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-True-mark-or-false-mark h3 {
+}
+
+.icon-mark-false {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-mark-false::after {
+  position: absolute;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\58";
+  color: rgba(224, 27, 51, 1);
+  background-color: rgba(252, 232, 235, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.box-True-mark-or-false-mark ul {
+  /* flex-direction: column; */
+}
+.box-beginning-growth-Ambition {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+/* --------------------------------------------------------- */
+/* slider */
+
+.box-body-tap .owl-nav {
+  display: none;
+}
+
+.box-body-tap .owl-dots {
+  padding-top: 2rem;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: var(--mainColor);
+  width: 60px;
+  height: 20px;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: var(--mainColor);
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 30px;
+  height: 20px;
+  transition: all 0.5s;
+}
+/* ====================================================================================== */
+
+@media screen and (max-width: 767px) {
+  .box-True-mark-or-false-mark ul {
+    /* background-color: aqua; */
+    gap: 40px;
+  }
+  .bord-left {
+    border: none;
+    padding: 0.5rem 0;
+  }
+  .col-sm-3-m {
+    width: 50%;
+  }
+  .box-head-Advantages {
+    font-size: 12px;
+  }
+  .box-tab-Advantages .accordion-button {
+    font-size: 14px;
+  }
+  .box-item-tab-link {
+    gap: 20px;
+  }
+  .box-True-mark-or-false-mark {
+    padding-inline-end: 1rem;
+  }
+  .icon-mark-True::after {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+  .icon-mark-false::after {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .box-item-tab-link {
+    font-size: 14px;
+  }
+  .box-item-all h5 {
+    font-size: 30px;
+  }
+  .box-item-all h4 {
+    font-size: 18px;
+  }
+  .box-item-all h5 span {
+    font-size: 14px;
+  }
+  .box-item-all ul li {
+    font-size: 12px;
+  }
+  .box-item-all ul li::after {
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+  }
+  .box-True-mark-or-false-mark .text-name {
+    font-size: 14px;
+  }
+  .box-tab-Advantages .accordion-button {
+    padding: 18px;
+  }
+  .box-item-all ul {
+    padding-inline-start: 0.5rem;
+  }
+  .box-item-all ul li {
+    padding-inline-start: 2rem;
+    padding-inline-end: 0.5rem;
+  }
+  .Best-Seller{
+    padding: 4px 14px;
+  }
+  .box-tab-Advantages .accordion-button:not(.collapsed){
+    padding: 18px;
+
+  }
+}

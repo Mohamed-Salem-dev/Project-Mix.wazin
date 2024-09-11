@@ -1,0 +1,22 @@
+body {
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+}
+
+.box-img-bot {
+  left: 0;
+  right: 40%;
+}
+
+.offset-1-w {
+  margin-right: 8.33333333%;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .offset-1-w {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

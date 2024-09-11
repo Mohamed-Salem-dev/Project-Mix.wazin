@@ -1,0 +1,46 @@
+html,
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+
+:root {
+  --main-color: #000;
+  --bg-color: #fff;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.box-Add-New h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.box-btn{
+  text-align: end;
+}
+.btn-Close{
+
+}

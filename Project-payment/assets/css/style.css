@@ -1,0 +1,238 @@
+html,
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+html,
+body {
+  font-family: "font-xxxx";
+}
+
+:root {
+  --main-color: #000;
+  --bg-color: #fff;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================================================================================================= */
+/* navbar */
+.box-nav-Pay-deposit-orders {
+  background-color: #fff;
+  padding: 16px 0;
+}
+.box-nav-Pay-deposit-orders h1 {
+  color: #1f180f;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.box-nav-Pay-deposit-orders img{
+  width: 130px;
+}
+
+/* ================================================================================================================= */
+.box-Pay-deposit-orders {
+  background-color: #f7f8fa;
+}
+.box-pay-Dial-number {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  border: solid 1px #e1e5eb;
+  margin-bottom: 1.4rem;
+}
+.box-pay-Dial-number h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5a5e66;
+  margin: 0;
+}
+.box-pay-Dial-number span {
+  color: #12171f;
+}
+.box-pay-Dial-number p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5a5e66;
+  margin: 0;
+  margin-top: 1.4rem;
+}
+.box-pay-Dial-number p span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #12171f;
+}
+.box-Pay-Order-details {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  border: solid 1px #e1e5eb;
+  margin-bottom: 1.4rem;
+}
+
+.box-Pay-Order-details h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #12171f;
+  margin-bottom: 1rem;
+}
+
+.box-Pay-Order-details h3 {
+  color: #12171f;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.4rem;
+}
+.box-Pay-Order-details p {
+  color: #5a5e66;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 0.2rem;
+}
+.box-Pay-Order-details p span {
+  color: #12171f;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box-Pay-Order-details ul li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.box-Pay-Ask-price {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  border: solid 1px #e1e5eb;
+  margin-bottom: 1.4rem;
+}
+.box-Pay-Ask-price h2 {
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #12171f;
+}
+.box-Pay-Ask-price ul li {
+  color: #5a5e66;
+  font-size: 14px;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.box-Pay-Ask-price ul li span {
+  color: #5a5e66;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box-Pay-Ask-price ul li.Total-Pay {
+  border-top: 1px solid #e1e5eb;
+  padding-top: 0.5rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: #12171f;
+}
+.box-You-will-pay-now {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  border: solid 1px #e1e5eb;
+  margin-bottom: 1.4rem;
+}
+.box-You-will-pay-now h2 {
+  color: #5a5e66;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.box-You-will-pay-now h3 {
+  color: #1b67e0;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+.box-You-will-pay-now p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5a5e66;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 1rem;
+}
+.box-pay-Payment-details {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  border: solid 1px #e1e5eb;
+  margin-bottom: 1.4rem;
+}
+.box-pay-Payment-details h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #12171f;
+  margin-bottom: 1.4rem;
+}
+.box-pay-Payment-details .label-pay {
+  font-size: 14px;
+  color: #12171f;
+  font-weight: 400;
+}
+.box-pay-Payment-details .input-pay {
+  border: solid 1px #e1e5eb;
+  height: 48px;
+  border-radius: 8px;
+  padding: 16px;
+}
+.box-pay-Payment-details .btn-Pay-now {
+  background-image: linear-gradient(-90deg, #2da4e0 10%,  #2d51e0 74%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+.box-Pay-Ask-price .Shipping-Pay{
+color: #109343;
+}
+.box-Pay-Ask-price  .Discount-code-Pay{
+  color: #931019;
+}
+@media screen and (max-width: 767px) {
+  .box-nav-Pay-deposit-orders h1{
+    font-size: 24px;
+  }.box-nav-Pay-deposit-orders img {
+width: 90px;
+  }
+}

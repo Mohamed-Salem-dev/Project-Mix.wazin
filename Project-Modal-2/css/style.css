@@ -1,0 +1,223 @@
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #000;
+  --bg-color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================================================================================================= */
+
+.bom-modil-builder {
+  padding: 24px;
+}
+.box-search-input-builder {
+  position: relative;
+  /* padding-top: 24px; */
+  /* padding-bottom: 14px; */
+  width: 60%;
+  margin: auto;
+}
+.box-search-input-builder input {
+  padding-inline-start: 30px;
+}
+.icon-search-builder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.bom-modil-builder h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.box-tab-builder {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.box-tab-builder .nav-pills {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.box-tab-builder .nav-pills .nav-item .nav-link {
+  color: #5a5e66;
+  border: solid 1px #9d9fa3;
+  border-radius: 99px;
+  font-weight: 500;
+  font-size: 16px;
+  /* width: 100%; */
+}
+
+.box-tab-builder .nav-pills .nav-item .nav-link.active {
+  background-color: #1b67e0;
+  color: #fff;
+  border: solid 1px #1b67e0;
+}
+.box-Showing-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-top: solid 1px #e1e5eb;
+}
+
+.box-Showing-pagination p {
+  color: #5a5e66;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.box-img-tab {
+  border-radius: 8px;
+}
+.box-img-tab img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.box-Showing-pagination .page-link {
+  color: #5a5e66;
+  border: none;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.box-Showing-pagination .btn-link-chevron {
+  border: solid #5a5e66 1px !important;
+  border-radius: 5px;
+  margin-left: 12px;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.box-Showing-pagination .bots {
+  margin-inline-end: 14px;
+  /* margin-inline-start: 12px; */
+}
+.box-Showing-pagination .left-chevron {
+  /* margin-inline-end: 12px; */
+}
+.box-modal-images-library-body {
+  /* height: 100%; */
+  max-width: 90%;
+  margin: 1rem auto;
+}
+.box-modal-images-library {
+  width: 100%;
+  height: 100%;
+}
+.btn-close-modal-library {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+/* =============================================================================================== */
+.box-slider-owl-carousel {
+  text-align: center;
+}
+.owl-carousel.owl-drag .owl-item{
+  /* width: 200px !important; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.owl-carousel .owl-stage{
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.owl-dots{
+  display: none !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #9d9fa3;
+  font-size: 18px;
+  color: #fff;
+}
+.owl-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-nav span{
+font-size: 30px;
+display: flex;
+align-items: center;
+position: absolute;
+bottom: -5px;
+}
+.owl-carousel .owl-nav{
+  margin-top: 1.5rem;
+}
+.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+}
+.owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  left: 4%;
+  /* top: 0; */
+}
+/* =============================================================================================== */
+
+@media screen and (max-width: 768px) {
+  .box-Showing-pagination {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bom-modil-builder {
+    padding: 0;
+  }
+  .box-search-input-builder {
+    width: 90%;
+  }
+  .bom-modil-builder h2 {
+    font-size: 24px;
+  }
+  .box-tab-builder .nav-pills .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .col-sm-6-mo {
+    width: 50%;
+  }
+}

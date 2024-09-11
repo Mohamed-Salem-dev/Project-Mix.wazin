@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Report NO. {{ $data['id'] }}</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+  <style>
+    body {
+      padding: 20px 30px;
+      color: #000038;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    #wrraperdiv {
+      /* border: 2px solid #000038; */
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      /* background: #000038; */
+      color: rgb(45, 81, 224);
+      padding: 18px 0;
+      margin: 0 0 5px 0;
+      letter-spacing: 0.5px;
+      /* text-transform: uppercase; */
+      font-size: 24px;
+      position: relative;
+      display: block;
+    }
+
+    h2::after {
+      /* content: ""; */
+      /* position: absolute; */
+      /* top: 0; */
+      /* left: 50%;
+      transform: translate(-50%);
+      width: 100px;
+      height: 3px;
+      background-color: rgb(45, 81, 224);
+      bottom: 2px; */
+
+    }
+
+    h3 {
+      text-align: end;
+    }
+
+    table.tablestyle1 {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      border-spacing: 1px;
+    }
+
+    table th {
+      background-color: rgba(247, 248, 250, 1);
+      color: #231F20;
+      text-transform: capitalize;
+      font-size: 18px;
+      padding: 8px;
+    }
+
+    table td {
+      font-size: 16px;
+      padding: 16px;
+      /* background-color: #f5f5f5; */
+    }
+
+    table.tablestyle2 {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      border-spacing: 1px;
+    }
+
+    table.tablestyle2 th {
+      background-color: rgba(247, 248, 250, 1);
+      color: #231F20;
+      padding: 8px 0;
+    }
+
+    h4 {
+      color: #000038;
+    }
+
+    h4 b {
+      color: #000038;
+    }
+
+    table b {
+      font-size: 16px;
+      /* background-color: #f5f5f5; */
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #4a4a4a;
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+    }
+
+    .titel-Store {
+      padding-bottom: 6px;
+    }
+
+    .icon-font {
+      width: 30px;
+      height: 30px;
+      /* background-color: #fff; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 auto 6px;
+    }
+
+    .icon-font svg {
+      /* background-color: #fff; */
+      width: 20px;
+      height: 20px;
+      fill: #4a4a4a;
+
+    }
+
+    .sar {
+      background-color: yellow;
+    }
+
+    .logo-img {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h4 style="float: left;">
+    <div class="titel-Store">
+      <b>Report No:</b> <span style="color: #4a4a4a">{{ $data['id'] }}</span>
+    </div>
+    <div class="titel-Store">
+      <b>Store Name:</b> <span style="color: #4a4a4a"> {{tenant()->id}} </span>
+    </div>
+    <div class="titel-Store">
+      <b>Store URL:</b> <span style="color: #4a4a4a">{{ url('/') }} </span>
+    </div>
+  </h4>
+  <h4 style="float: right;text-align:center;">
+
+
+    <div class="titel-Store">
+
+      <b>Report Date</b>
+    </div>
+    <span style="color: #4a4a4a;">{{ $data['report_date'] }} </span>
+    <div class="logo-img">
+      <img src="{{ tenant_asset('store-owner/images/logo.png') }}" alt="">
+    </div>
+  </h4>
+
+  <div style="clear: both">
+    <!-- <br> -->
+  </div>
+
+  <div id="wrraperdiv">
+    <h2>Marketing Spend</h2>
+    <table class="tablestyle1">
+      <tr>
+        <th>
+          <div class="icon-font">
+            <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none">
+              <path
+                d="M9.37997 5.53758C9.13795 5.97024 9 6.46901 9 7C9 7.50649 9.12552 7.98367 9.34714 8.40212L12 13.266M9.37997 5.53758C9.89312 4.6202 10.8741 4 12 4C13.1554 4 14.1582 4.65313 14.6594 5.61032L20.5987 16.5C20.8539 16.9413 21 17.4536 21 18C21 19.6569 19.6569 21 18 21C16.8598 21 15.8682 20.3639 15.3606 19.4272L12 13.266M9.37997 5.53758L3.35145 16.5898M3.35145 16.5898C3.27389 16.7351 3.20795 16.8876 3.15486 17.046C3.05442 17.3457 3 17.6665 3 18C3 19.6569 4.34315 21 6 21C6.94717 21 7.79182 20.5611 8.34162 19.8755C8.45367 19.7358 8.55348 19.5858 8.6394 19.4272M3.35145 16.5898C3.85618 15.6438 4.85291 15 6 15C7.65685 15 9 16.3431 9 18C9 18.5167 8.8694 19.0028 8.6394 19.4272M8.6394 19.4272L12 13.266"
+                stroke="black" stroke-width="2" />
+            </svg>
+          </div>
+          Google Search
+        </th>
+        <th>
+          <div class="icon-font">
+            <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none">
+              <path
+                d="M9.37997 5.53758C9.13795 5.97024 9 6.46901 9 7C9 7.50649 9.12552 7.98367 9.34714 8.40212L12 13.266M9.37997 5.53758C9.89312 4.6202 10.8741 4 12 4C13.1554 4 14.1582 4.65313 14.6594 5.61032L20.5987 16.5C20.8539 16.9413 21 17.4536 21 18C21 19.6569 19.6569 21 18 21C16.8598 21 15.8682 20.3639 15.3606 19.4272L12 13.266M9.37997 5.53758L3.35145 16.5898M3.35145 16.5898C3.27389 16.7351 3.20795 16.8876 3.15486 17.046C3.05442 17.3457 3 17.6665 3 18C3 19.6569 4.34315 21 6 21C6.94717 21 7.79182 20.5611 8.34162 19.8755C8.45367 19.7358 8.55348 19.5858 8.6394 19.4272M3.35145 16.5898C3.85618 15.6438 4.85291 15 6 15C7.65685 15 9 16.3431 9 18C9 18.5167 8.8694 19.0028 8.6394 19.4272M8.6394 19.4272L12 13.266"
+                stroke="black" stroke-width="2" />
+            </svg>
+          </div>
+
+          Google GDN
+        </th>
+        <th>
+          <div class="icon-font">
+            <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none">
+              <path
+                d="M9.37997 5.53758C9.13795 5.97024 9 6.46901 9 7C9 7.50649 9.12552 7.98367 9.34714 8.40212L12 13.266M9.37997 5.53758C9.89312 4.6202 10.8741 4 12 4C13.1554 4 14.1582 4.65313 14.6594 5.61032L20.5987 16.5C20.8539 16.9413 21 17.4536 21 18C21 19.6569 19.6569 21 18 21C16.8598 21 15.8682 20.3639 15.3606 19.4272L12 13.266M9.37997 5.53758L3.35145 16.5898M3.35145 16.5898C3.27389 16.7351 3.20795 16.8876 3.15486 17.046C3.05442 17.3457 3 17.6665 3 18C3 19.6569 4.34315 21 6 21C6.94717 21 7.79182 20.5611 8.34162 19.8755C8.45367 19.7358 8.55348 19.5858 8.6394 19.4272M3.35145 16.5898C3.85618 15.6438 4.85291 15 6 15C7.65685 15 9 16.3431 9 18C9 18.5167 8.8694 19.0028 8.6394 19.4272M8.6394 19.4272L12 13.266"
+                stroke="black" stroke-width="2" />
+            </svg>
+          </div>
+          Google Shopping
+        </th>
+        <span>
+
+        </span>
+
+      </tr>
+      <tr>
+        <td>{{ $data['google_search'] }}</td>
+        <td>{{ $data['google_gdn'] }}</td>
+        <td>{{ $data['google_shopping'] }}</td>
+      </tr>
+      <tr>
+        <th>
+          <div class="icon-font">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+              enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1"
+              viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+            </svg>
+          </div>
+          Facebook
+        </th>
+        <th>
+          <div class="icon-font icon-Youtube">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+              enable-background="new 0 0 24 24" height="24px" id="Layer_1" version="1.1" viewBox="0 0 24 24"
+              width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path
+                  d="M23.3,7.3c0-0.2-0.3-1.8-1-2.5c-0.9-1-1.9-1.1-2.4-1.1l-0.1,0c-3.1-0.2-7.7-0.2-7.8-0.2c0,0-4.7,0-7.8,0.2l-0.1,0   c-0.5,0-1.5,0.1-2.4,1.1c-0.7,0.8-1,2.4-1,2.6c0,0.1-0.2,1.9-0.2,3.8v1.7c0,1.9,0.2,3.7,0.2,3.8c0,0.2,0.3,1.8,1,2.5   c0.8,0.9,1.8,1,2.4,1.1c0.1,0,0.2,0,0.3,0c1.8,0.2,7.3,0.2,7.5,0.2c0,0,0,0,0,0c0,0,4.7,0,7.8-0.2l0.1,0c0.5-0.1,1.5-0.2,2.4-1.1   c0.7-0.8,1-2.4,1-2.6c0-0.1,0.2-1.9,0.2-3.8v-1.7C23.5,9.3,23.3,7.4,23.3,7.3z M15.9,12.2l-6,3.2c-0.1,0-0.1,0.1-0.2,0.1   c-0.1,0-0.2,0-0.2-0.1c-0.1-0.1-0.2-0.2-0.2-0.4l0-6.5c0-0.2,0.1-0.3,0.2-0.4S9.8,8,10,8.1l6,3.2c0.2,0.1,0.3,0.2,0.3,0.4   S16.1,12.1,15.9,12.2z" />
+              </g>
+            </svg>
+          </div>
+          Youtube
+        </th>
+        <th>
+          <div class="icon-font  icon-Instagram">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7"
+              enable-background="new 0 0 56.7 56.7" xml:space="preserve">
+              <g>
+                <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
+                <circle cx="41.5" cy="16.4" r="2.9" />
+                <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
+              </g>
+            </svg>
+
+          </div>
+          Instagram
+        </th>
+      </tr>
+      <tr>
+        <td>{{ $data['facebook'] }}</td>
+        <td>{{ $data['youtube'] }}</td>
+        <td>{{ $data['instagram'] }}</td>
+      </tr>
+      <tr>
+        <th>
+          <div class="icon-font  icon-Instagram">
+            <?xml version="1.0" ?><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+            </svg>
+          </div>
+          Tiktok
+        </th>
+        <th>
+          <div class="icon-font  icon-Instagram">
+            <?xml version="1.0" ?><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title />
+              <path
+                d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z" />
+            </svg>
+          </div>
+          Snapchat
+        </th>
+        <th>
+          <div class="icon-font  icon-Instagram">
+            <?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M499.6 236.3L441.5 210l-161.6 73.25C272.3 286.6 264.3 288.4 256 288.4S239.8 286.6 232.1 283.3L70.5 210L12.38 236.3c-16.5 7.5-16.5 32.5 0 40l233 105.6c6.75 3.125 14.5 3.125 21.25 0l233-105.6C516.1 268.8 516.1 243.8 499.6 236.3zM12.38 148l233 105.8c6.75 3 14.5 3 21.25 0L499.6 148c16.5-7.5 16.5-32.5 0-40l-233-105.8c-6.75-3-14.5-3-21.25 0L12.38 108C-4.125 115.5-4.125 140.5 12.38 148zM499.6 364.1l-57.88-26.25l-161.9 73.38C272.3 414.6 264.3 416.4 256 416.4s-16.25-1.75-23.88-5.125l-161.9-73.38l-57.88 26.25c-16.5 7.5-16.5 32.5 0 40l233 105.6c6.75 3 14.5 3 21.25 0l233-105.6C516.1 396.6 516.1 371.6 499.6 364.1z" />
+            </svg>
+          </div>
+          Others
+        </th>
+      </tr>
+      <tr>
+        <td>{{ $data['tiktok'] }}</td>
+        <td>{{ $data['snapchat'] }}</td>
+        <td>{{ $data['others'] }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <h3>Total Spent :
+    <span class="sar" style="color: #4a4a4a">{{ $data['total'] }} SAR</span>
+  </h3>
+  <br>
+
+  <div id="wrraperdiv">
+    <h2>Conversion Cost</h2>
+    <table class="tablestyle2">
+      <tr>
+        <th>
+
+          Cost Per Page View
+        </th>
+        <th>
+
+          Cost Per Add To Cart
+        </th>
+      </tr>
+      <tr>
+        <td><b>6200 <span>SAR</span>
+          </b></td>
+        <td><b>6200 <span>SAR</span></b></td>
+      </tr>
+      <tr>
+        <th>
+
+          Cost Per Add To Wishlist
+        </th>
+        <th>
+
+          Cost Per Checkout
+        </th>
+      </tr>
+      <tr>
+        <td><b>6200 <span>SAR</span></b></td>
+        <td><b>0 <span>SAR</span></b></td>
+      </tr>
+      <tr>
+        <th colspan="2">
+
+          Cost Per Order
+        </th>
+      </tr>
+      <tr>
+        <td colspan="2"><b> <span class="sar">15405 SAR</span></b></td>
+      </tr>
+    </table>
+  </div>
+
+  <br>
+  <!-- <div id="footer">
+    <img src="{{ tenant_asset('store-owner/images/logo.png') }}" height="50" alt="">
+  </div> -->
+
+</body>
+
+</html>

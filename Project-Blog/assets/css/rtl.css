@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-family: "Cairo", sans-serif;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", sans-serif;
+}
+
+
+.box-item-Blog-img-text .labol-E-Marketing {
+  background-color: #e4edfb;
+  padding: 8px 16px 8px 16px;
+  border-radius: 99px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  left: auto;
+  border: #f7f8fa 1px solid;
+  color: #1b67e0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.icon-search-Blog {
+  left: 12px;
+  right: auto;
+}
+.btn-page-link{
+  transform: rotate(180deg);
+}
+
+.box-header-text-Blog-details{
+  left: auto;
+  right: 24px;
+}
+
+.box-table-contents .box-items-table-contents .item-li::after {
+  left: auto;
+  right: 0;
+}
+
+input[type="email"] {
+  direction: ltr;
+}

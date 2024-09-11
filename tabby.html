@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="description"
+      content="A website that sells all products, such as washing machines, refrigerators, computer screens, and mobile phones"
+    />
+
+    <meta name="keywords" content="ecommerce, shopping" />
+
+    <meta name="author" content="Wazin" />
+
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>Wazin</title>
+
+    <!-- Apple touch icon -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- icon Or img in favicon -->
+    <link rel="icon" href="images/test/hover-image-01.webp" type="" />
+
+    <style>
+      :root {
+        --mainColor: #4d7388;
+        --headerTitle: #000;
+        --headerParagraph: #000;
+        --subTitleFooter: rgb(255, 255, 255);
+      }
+      .box_tabby h3 {
+        color: var(--mainColor);
+        text-align: center;
+      }
+      .box_container {
+        width: 80%;
+        margin: auto;
+      }
+      .row_tabby {
+      }
+      .col_tabby {
+        /* width: 33%; */
+      }
+
+      .row_tabby .box_border_redeos {
+        width: 30px;
+        height: 30px;
+        background-color: #4d7388;
+        border-radius: 50%;
+        position: relative;
+        /* border:1px solid var(--mainColor) ; */
+      }
+
+      .col_today {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        position: relative;
+      }
+      .col_today::after {
+        position: absolute;
+        content: "";
+        top: 30.5px;
+        left: 14.2px;
+        width: 1.5px;
+        height: 16px;
+        background-color: var(--mainColor);
+      }
+
+      .col_today:last-child::after {
+        display: none;
+      }
+
+      .col_today .box_border_redeos.tow::after {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        /* transform: translate(-50%); */
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #fff;
+        /* border-radius: 50%; */
+        /* border:1px solid var(--mainColor) ; */
+      }
+      .col_today .box_border_redeos.tow::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* transform: translate(-50%); */
+        width: 95%;
+        height: 95%;
+        content: "";
+        background-color: transparent;
+        border: 1px solid var(--mainColor);
+        border-radius: 50%;
+        z-index: 5;
+      }
+
+      .col_today .box_border_redeos.one::after {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        /* transform: translate(-50%); */
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #fff;
+        /* border-radius: 50%; */
+        /* border:1px solid var(--mainColor) ; */
+      }
+      .col_today .box_border_redeos.one::before {
+        position: absolute;
+        top: -0.5px;
+        left: -0.5px;
+        /* transform: translate(-50%); */
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: transparent;
+        border: 1px solid var(--mainColor);
+        border-radius: 50%;
+        z-index: 5;
+      }
+      .one2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        width: 15px;
+        height: 15px;
+      }
+
+      .col_today .box_border_redeos.three::after {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        /* transform: translate(-50%); */
+        width: 100%;
+        height: 50%;
+        content: "";
+        background-color: #fff;
+        /* border-radius: 50%; */
+        /* border:1px solid var(--mainColor) ; */
+      }
+      .col_today .box_border_redeos.three::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* transform: translate(-50%); */
+        width: 95%;
+        height: 95%;
+        content: "";
+        background-color: transparent;
+        border: 1px solid var(--mainColor);
+        border-radius: 50%;
+        z-index: 5;
+      }
+      .three2 {
+        overflow: hidden;
+      }
+
+      /* .three2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        background-color: var(--mainColor);
+        width: 15px;
+        height: 15px;
+        z-index: 0;
+        border-radius: 0 0 10px 0;
+      } */
+
+      .price {
+        color: var(--mainColor);
+      }
+      .box_today {
+        color: #ababab;
+      }
+      .box-all-Today-price {
+        width: 60%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 677px) {
+        .box-all-Today-price {
+          width: 100%;
+        }
+      }
+    </style>
+    <!-- ===================================================================================================== -->
+  </head>
+
+  <body>
+    <!-- ===================================================================================================== -->
+
+    <section>
+      <div class="box_tabby">
+        <div class="box_container">
+          <div>
+            <h3>All applications are accepted</h3>
+          </div>
+          <div class="box-all-Today-price">
+            <div class="row_tabby">
+              <div class="col_today">
+                <div>
+                  <div class="box_border_redeos one"></div>
+                  <div class="one2"></div>
+                </div>
+                <div class="box_today">Today</div>
+                <div class="price">40.70 Rs</div>
+              </div>
+
+              <div class="col_today">
+                <div class="box_border_redeos tow"></div>
+                <div class="box_today">Today</div>
+                <div class="price">40.70 Rs</div>
+              </div>
+
+              <div class="col_today">
+                <div>
+                  <div class="box_border_redeos three"></div>
+                  <div class="three2"></div>
+                </div>
+                <div class="box_today">Today</div>
+                <div class="price">40.70 Rs</div>
+              </div>
+
+              <div class="col_today">
+                <div class="box_border_redeos for"></div>
+                <div class="box_today">Today</div>
+                <div class="price">40.70 Rs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================================================================================== -->
+    <!-- js -->
+    <script></script>
+  </body>
+</html>

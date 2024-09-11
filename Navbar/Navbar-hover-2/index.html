@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+    name="description"
+    content="A website that sells all products, such as washing machines, refrigerators, computer screens, and mobile phones"
+  />
+
+  <meta
+    name="keywords"
+    content="web, web design,web development,web developer,frontend developer,backend developer,"
+  />
+    <meta name="author" content="Mohamed Salem" />
+    <meta charset="utf-8" />
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <meta name="theme-color" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="google" content="notranslate" />
+    <title>Mohamed Salem</title>
+
+    <link rel="icon" href="images/Mohamed Salem.jpg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/rtl.css" /> -->
+
+    <style>
+      :root {
+        --main-color: #000;
+        --bg-color: #fff;
+      }
+    </style>
+    <!-- ================================================================================================================= -->
+  </head>
+
+  <body>
+    <!-- ================================================================================================================= -->
+    <!-- navbar -->
+    <nav class="">
+      <div class="box-navbar-comprehensive-first">
+        <div class="container">
+          <div class="box-menu-navbar-first">
+            <div class="item-icon-nav language-nav-2">
+              <ul class="">
+                <li>
+                  <a class="dropdown-item-2" href="/">
+                    <div>
+                      <img src="images/language/Arab.png" alt="" />
+                    </div>
+                    <span class="css-wuhtur">عربي </span>
+                  </a>
+                </li>
+
+                <!-- <li>
+              <a
+                class="dropdown-item-2"
+                href="/"
+              >
+                <div>
+                  <img src="images/language/English.png" alt="" />
+                </div>
+                <span class="css-wuhtur">English</span>
+              </a>
+            </li> -->
+              </ul>
+            </div>
+
+            <div class="box-Login-cart-heart">
+              <div class="box-icons-cart-heart box-icons-cart-heart-mob">
+                <button
+                  class="btn btn-search btn-search-nav"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSearchProducts"
+                >
+                  <i class="fa-regular fa-magnifying-glass"></i>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-cart-nav"
+                >
+                  <i class="fa-light fa-cart-shopping"></i>
+                  <div class="number-cart item-count-cart">0</div>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbarHeart"
+                  aria-controls="offcanvasNavbarHeart"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-heart-nav"
+                >
+                  <i class="fa-light fa-heart"></i>
+                  <div class="item-count count-heart heart__count">0</div>
+                </button>
+              </div>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalLogin"
+                class="btn btn-login-modal btn-join-us"
+              >
+                <span> Login</span>
+              </button>
+            </div>
+            <!-- --------------------------------------------- -->
+          </div>
+        </div>
+      </div>
+      <div class="box-navbar-comprehensive">
+        <div class="container">
+          <div class="box-menu-navbar">
+            <a class="navbar-logo-brand" href="">
+              <img src="images/logo-wazin.svg" alt="" />
+            </a>
+
+            <button class="btn btn-toggle-collapse" type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="box-collapse-nav">
+              <div class="box-mo-logo-xmark">
+                <a class="navbar-logo-brand" href="">
+                  <img src="images/logo-wazin.svg" alt="" />
+                </a>
+                <div>
+                  <button class="btn btn-xmark">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="box-items-links">
+                <li class="item-nav"><a class="link-nav" href="#">Home</a></li>
+                <li class="item-nav"><a class="link-nav" href="#">Abute</a></li>
+
+                <li class="item-nav box-Categories-nav">
+                  <a class="link-nav" href="#"
+                    >All Categories
+                    <span class="arrow-Categories">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                  </a>
+
+                  <div class="box-collapse-items">
+                    <div class="box-collapse-items-2">
+                      <div class="row gy-4">
+                        <div class="d-none-mo d-block-pc">
+                          <button class="btn btn-xmark-2">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                          </button>
+
+                          <div class="box-AllCategories-xmark-chevron">
+                            <h2 class="titel">All Categories</h2>
+                            <button class="btn btn-chevron">
+                              <i class="fa-solid fa-circle-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                        >
+                          <div class="box-items-Categories-links">
+                            <div class="item-titel">
+                              <h3>
+                                <a class="pc-link" href="ab.html"
+                                  >Women's Clothing link</a
+                                >
+                                <!-- <button  class="mo-link">Women's Clothing11</button> -->
+                                <span class="arrow-Categories-items">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              </h3>
+                              <div class="ul-items-Categories">
+                                <div>
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h2 class="titel">All Categories</h2>
+                                      <button class="btn btn-chevron-items">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li><a href="">Headwear 1</a></li>
+                                  <li><a href="">Baseball Caps 1</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                        >
+                          <div class="box-items-Categories-links">
+                            <div class="item-titel">
+                              <h3>
+                                <a href="">Men's Clothing</a>
+                                <span class="arrow-Categories-items">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              </h3>
+                              <div class="ul-items-Categories">
+                                <div>
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h2 class="titel">All Categories</h2>
+                                      <button class="btn btn-chevron-items">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li><a href="">Headwear 2</a></li>
+                                  <li><a href="">Baseball Caps 2</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                        >
+                          <div class="box-items-Categories-links">
+                            <div class="item-titel">
+                              <h3>
+                                <a href="">TOYS, KIDS & BABY </a>
+                                <span class="arrow-Categories-items">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              </h3>
+                              <div class="ul-items-Categories">
+                                <div>
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h2 class="titel">All Categories</h2>
+                                      <button class="btn btn-chevron-items">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li><a href="">Headwear 3</a></li>
+                                  <li><a href="">Baseball Caps 3</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-nav box-Categories-nav">
+                  <a class="link-nav" href="#"
+                    >All Products
+                    <span class="arrow-Categories">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                  </a>
+
+                  <div class="box-collapse-items">
+                    <div class="box-collapse-items-2">
+                      <div class="row gy-4">
+                        <div class="d-none-mo d-block-pc">
+                          <button class="btn btn-xmark-2">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                          </button>
+
+                          <div class="box-AllCategories-xmark-chevron">
+                            <h2 class="titel">All Products</h2>
+                            <button class="btn btn-chevron">
+                              <i class="fa-solid fa-circle-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                        >
+                          <div class="box-items-Categories-links">
+                            <div class="item-titel">
+                              <h3>
+                                <a href="">Women's Clothing</a>
+                                <span class="arrow-Categories-items">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              </h3>
+                              <div class="ul-items-Categories">
+                                <div>
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h2 class="titel">All Products</h2>
+                                      <button class="btn btn-chevron-items">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li><a href="">Headwear 4</a></li>
+                                  <li><a href="">Baseball Caps 4</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                        >
+                          <div class="box-items-Categories-links">
+                            <div class="item-titel">
+                              <h3>
+                                <a href="">Men's Clothing</a>
+                                <span class="arrow-Categories-items">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              </h3>
+                              <div class="ul-items-Categories">
+                                <div>
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h2 class="titel">All Products</h2>
+                                      <button class="btn btn-chevron-items">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li><a href="">Headwear 5</a></li>
+                                  <li><a href="">Baseball Caps 5</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                        >
+                          <div class="box-items-Categories-links">
+                            <div class="item-titel">
+                              <h3>
+                                <a href="">TOYS, KIDS & BABY </a>
+                                <span class="arrow-Categories-items">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              </h3>
+                              <div class="ul-items-Categories">
+                                <div>
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h2 class="titel">All Products</h2>
+                                      <button class="btn btn-chevron-items">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li><a href="">Headwear 6</a></li>
+                                  <li><a href="">Baseball Caps 6</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-nav box-Categories-nav">
+                  <a class="link-nav" href="#"
+                    >Blogs
+                    <span class="arrow-Categories">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                  </a>
+
+                  <div class="box-collapse-items">
+                    <div class="box-collapse-items-2">
+                      <div class="row gy-4">
+                        <div class="d-none-mo d-block-pc">
+                          <button class="btn btn-xmark-2">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                          </button>
+
+                          <div class="box-AllCategories-xmark-chevron">
+                            <h2 class="titel">Blogs</h2>
+                            <button class="btn btn-chevron">
+                              <i class="fa-solid fa-circle-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                        >
+                          <div class="box-items-Categories-links">
+                            <div class="item-titel">
+                              <h3>
+                                <a href="">Blogs 123 </a>
+                                <span class="arrow-Categories-items">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              </h3>
+                              <div class="ul-items-Categories">
+                                <div>
+                                  <div class="d-none-mo d-block-pc">
+                                    <button class="btn btn-xmark-3">
+                                      <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+
+                                    <div
+                                      class="box-AllCategories-xmark-chevron"
+                                    >
+                                      <h2 class="titel">Blogs 123</h2>
+                                      <button class="btn btn-chevron-items">
+                                        <i
+                                          class="fa-solid fa-circle-chevron-right"
+                                        ></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- <ul>
+                                  <li><a href="">Headwear 6</a></li>
+                                  <li><a href="">Baseball Caps 6</a></li>
+                                </ul> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="box-icons-cart-heart">
+                <button
+                  class="btn btn-search btn-search-nav"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSearchProducts"
+                >
+                  <i class="fa-regular fa-magnifying-glass"></i>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-cart-nav"
+                >
+                  <i class="fa-light fa-cart-shopping"></i>
+                  <div class="number-cart item-count-cart">0</div>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbarHeart"
+                  aria-controls="offcanvasNavbarHeart"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-heart-nav"
+                >
+                  <i class="fa-light fa-heart"></i>
+                  <div class="item-count count-heart heart__count">0</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ================================================================================================================= -->
+    <!-- search Products -->
+    <aside class="box-modal-search-Products">
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalSearchProducts"
+        tabindex="-1"
+        aria-labelledby="modalSearchProductsLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalSearchProductsLabel">
+                Search products
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="input-group box-input-button-search">
+                  <input
+                    type="search"
+                    class="form-control"
+                    name="prod-search"
+                    id="prod-search"
+                    placeholder="Search for products...."
+                  />
+                </div>
+                <button type="submit" class="btn-search-submit btn">
+                  Save changes
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================================================================================================== -->
+    <!-- Favorite -->
+    <aside>
+      <div
+        class="offcanvas box-aside-Cart offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbarHeart"
+        aria-labelledby="offcanvasNavbarHeartLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasNavbarHeartLabel">
+            YOUR CART (<span class="item-count">0</span> ITEMS)
+          </h2>
+          <button
+            type="button"
+            class="btn-close-cart btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            close
+          </button>
+        </div>
+        <hr />
+        <div class="offcanvas-body offcanvas-body-Favorites">
+          <!-- ========================================== -->
+          <!-- TODO:dynamic product id -->
+          <!-- code php -->
+
+          <!-- ============================================ -->
+
+          <div class="box-Favorites-empty">
+            <img src="images/Favorites-empty.jpg" alt="" />
+            <p>Your shopping cart is empty. You can shop now</p>
+            <a href="index.html">Shop now</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- Cart -->
+    <aside>
+      <div
+        class="offcanvas box-aside-Cart offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasNavbarLabel">
+            YOUR CART (<span class="item-count-cart">0</span> ITEMS)
+          </h2>
+          <button
+            type="button"
+            class="btn-close-cart btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            close
+          </button>
+        </div>
+        <hr />
+        <div class="offcanvas-body offcanvas-body-cart">
+          <!-- ================================= -->
+          <!-- TODO:dynamic product id -->
+          <!-- code php -->
+          <!-- ================================= -->
+
+          <div class="box-Empty-cart">
+            <img src="images/Empty-cart.png" alt="" />
+            <p>Your shopping cart is empty. You can shop now</p>
+            <a href="index.html">Shop now</a>
+          </div>
+        </div>
+
+        <div class="box-Only-Free-Shipping">
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              style="width: 100%"
+            >
+              <!-- <span class="box-aside-cart-icon-truck"
+                ><i class="fa-solid fa-truck"></i
+              ></span> -->
+              nly 311.00 R.s away from Free Shipping
+            </div>
+          </div>
+        </div>
+        <div class="box-aside-Cart-TOTAL">
+          <hr />
+          <div class="box-TOTAL-aside-Cart">
+            <h3>TOTAL:</h3>
+            <div>
+              <span class="TOTAL-SUBTOTAL-Nav-Cart-aside"></span
+              ><span>R.s</span>
+            </div>
+          </div>
+          <hr />
+
+          <div class="box-aside-Cart-link-cart-link-CheckOut">
+            <a href="cart.html" class="link-Cart"
+              ><span><i class="fa-duotone fa-cart-shopping"></i> </span> Cart</a
+            >
+            <a href="Check-Out.html" class="link-CheckOut">Check Out</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- login  -->
+    <aside>
+      <div
+        class="modal fade box-Modal"
+        id="exampleModalLogin"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered box-Modal-SignUp">
+          <div class="modal-content">
+            <!-- ----------------------------------------------- -->
+
+            <!-- Login -->
+            <div class="modal-body row" id="login">
+              <div class="column box-Login-mo-pc" id="login">
+                <div class="sec-content">
+                  <div class="box-SignUp">
+                    <div>
+                      <div class="icon-login-bracket">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                      </div>
+                      <h2>Login</h2>
+                    </div>
+                    <form class="box-form-SignUp">
+                      <div class="form-group Phone-Or-Email py-2">
+                        <label for="exampleInputphone"
+                          >Choose Phone Or E-mail</label
+                        >
+                      </div>
+
+                      <div class="box-Submit-reset">
+                        <button
+                          type="button"
+                          class="btn btn-Submit my-2 btnPhone"
+                        >
+                          <span><i class="fa-solid fa-phone"></i></span>
+                          <span>Phone</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-Submit my-2 btnEmail"
+                        >
+                          <span><i class="fa-solid fa-envelope"></i></span>
+                          <span>Email</span>
+                        </button>
+                      </div>
+                    </form>
+
+                    <button
+                      type="button"
+                      class="btn btn-Close-Login"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------------------------------------------- -->
+            <!-- login Phone -->
+            <div class="modal-body row" id="phone">
+              <div class="column box-Login-mo-pc">
+                <div class="sec-content">
+                  <div class="box-SignUp">
+                    <div>
+                      <div class="icon-login-bracket">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                      </div>
+                      <h2>Login</h2>
+                    </div>
+                    <form class="box-form-SignUp">
+                      <div class="form-group py-2">
+                        <label for="exampleInputphone">Phone</label>
+                        <input
+                          class="form-control"
+                          id="exampleInputphone"
+                          type="number"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter phone"
+                        />
+                      </div>
+
+                      <div class="box-Submit-reset">
+                        <button
+                          type="button"
+                          class="btn btn-Submit btnSubmitPhoneEmail my-2"
+                        >
+                          Submit
+                        </button>
+                      </div>
+
+                      <div class="box-Submit-reset">
+                        <button
+                          type="button"
+                          class="btn Login-by btnEmail my-2"
+                        >
+                          <span><i class="fa-solid fa-repeat"></i></span>
+                          <span>Login By Email</span>
+                        </button>
+                      </div>
+                    </form>
+                    <button
+                      type="button"
+                      class="btn btn-Close-Login"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------------------------------------- -->
+            <!-- login email -->
+            <div class="modal-body row" id="email">
+              <div class="column box-Login-mo-pc">
+                <div class="sec-content">
+                  <div class="box-SignUp">
+                    <div>
+                      <div class="icon-login-bracket">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                      </div>
+                      <h2>Login</h2>
+                    </div>
+                    <form class="box-form-SignUp">
+                      <div class="form-group py-2">
+                        <label for="exampleInputphone">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputphone"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter email"
+                        />
+                      </div>
+
+                      <div class="box-Submit-reset">
+                        <button
+                          type="button"
+                          class="btn btn-Submit btnSubmitPhoneEmail my-2"
+                        >
+                          Submit
+                        </button>
+                      </div>
+
+                      <div class="box-Submit-reset">
+                        <button
+                          type="button"
+                          class="btn Login-by btnPhone my-2"
+                        >
+                          <span><i class="fa-solid fa-repeat"></i></span>
+                          <span>Login By Email</span>
+                        </button>
+                      </div>
+                    </form>
+                    <button
+                      type="button"
+                      class="btn btn-Close-Login"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------------------- -->
+            <!-- Code (initially) -->
+            <div class="modal-body row" id="code">
+              <div class="column box-Login-mo-pc">
+                <div class="sec-content">
+                  <div class="box-SignUp">
+                    <div>
+                      <div class="icon-login-bracket">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                      </div>
+                      <h2>Login</h2>
+                    </div>
+                    <form class="box-form-SignUp">
+                      <div class="form-group py-2 Phone-Or-Email">
+                        <label for="exampleInputphone">Enter Code</label>
+                        <div class="box-code">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </div>
+                      <div class="box-Submit-reset">
+                        <button type="submit" class="btn btn-Submit my-2">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                    <button
+                      type="button"
+                      class="btn btn-Close-Login"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- ===================================================================================================== -->
+
+    <!-- ================================================================================================================= -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/main.rtl.js"></script> -->
+    <!-- ================================================================================================================= -->
+  </body>
+</html>

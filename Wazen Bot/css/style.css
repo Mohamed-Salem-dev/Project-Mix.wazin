@@ -1,0 +1,143 @@
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+img {
+  /* width: 100%; */
+}
+
+/* ================================================================================================================= */
+
+.icon-star-titel {
+}
+
+.box-Wazen-Bot h2 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0px 48px 0px 48px;
+  background-color: #f7f8fa;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  color: #2d51e0;
+  height: 70px;
+  width: max-content;
+  margin: auto;
+}
+
+.box-item-Wazen-Bot {
+  border: solid 1px #e1e3eb;
+  border-radius: 19px;
+  padding: 48px 48px 0;
+}
+.box-item-Wazen-Bot h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f121f;
+}
+
+.box-item-Wazen-Bot p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5a5c66;
+  width: 333px;
+}
+.img-log-wazin {
+  width: 98px;
+}
+
+.box-img-bot {
+  width: 324px;
+  position: relative;
+  left: 40%;
+  right: 0;
+  top: 100%;
+}
+
+.box-img-bot img {
+  width: 100%;
+}
+.box-items-pie-chart {
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px #dddddd;
+}
+.box-items-pie-chart .icon-chart-pie {
+  font-size: 26px;
+  color: #1b67e0;
+  background-color: #f7f8fa;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-items-pie-chart h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f121f;
+  padding-top: 16px;
+  /* padding-bottom: 8px; */
+}
+.box-items-pie-chart p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a5c66;
+}
+
+.offset-1-w {
+  margin-left: 8.33333333%;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .offset-1-w {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .box-img-bot {
+    position: static;
+  }
+}
+@media screen and (max-width: 991px) {
+  .center-flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .box-item-Wazen-Bot p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .box-items-pie-chart {
+    text-align: center;
+  }
+  .icon-chart-pie {
+    margin: auto;
+  }
+  .box-item-Wazen-Bot{
+    padding: 24px 24px 0;
+  }
+}

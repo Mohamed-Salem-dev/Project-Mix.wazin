@@ -1,0 +1,431 @@
+html,
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+html,
+body {
+  font-family: "font-xxxx";
+}
+
+:root {
+  --main-color: #000;
+  --bg-color: #fff;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================================================================================================= */
+/* navbar */
+.box-nav-Upgrade-package {
+  background-color: #fff;
+  padding: 16px 0;
+}
+
+.box-nav-Upgrade-package h1 {
+  color: #1f180f;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.box-nav-Upgrade-package img {
+  width: 130px;
+}
+
+/* ================================================================================================================= */
+.box-Upgrade-package {
+  background-color: #f7f8fa;
+}
+
+.box-Ambition-package-details {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+}
+.items-growth-ambition {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.items-growth-ambition li {
+  border: solid 1px #e1e5eb;
+  padding: 8px 16px;
+  border-radius: 99px;
+  color: #5a5e66;
+  font-weight: 500;
+  font-size: 14px;
+  /* width: 80px; */
+  text-align: center;
+}
+.items-growth-ambition li.active {
+  background-color: #1b67e01f;
+  color: #1b67e0;
+  border: solid 1px #1b67e01f;
+}
+.box-items-Ambition-package-details {
+  margin-top: 1.5rem;
+}
+
+.box-items-Ambition-package-details h2 {
+  color: #12171f;
+  font-size: 20px;
+  font-weight: 700;
+}
+.box-items-Ambition-package-details p {
+  color: #12171f;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: rem;
+}
+.box-items-Ambition-package-details li {
+  font-size: 1rem;
+  color: #5a5e66;
+  font-weight: 400;
+  /* padding-inline-end: 1rem; */
+  /* margin-inline-end: 1rem; */
+  padding: 0.4rem 0;
+  display: flex;
+  align-items: center;
+}
+.box-items-Ambition-package-details li::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  content: "\f00c";
+  margin-inline-end: 0.8rem;
+  background-color: #1b67e01f;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: #1b67e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.box-payment-method-package {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 1.6rem;
+}
+.box-payment-method-package h2 {
+  color: #12171f;
+  font-size: 20px;
+  font-weight: 700;
+}
+.bpx-tabs-payment-method-package {
+  margin-top: 1.4rem;
+}
+.btn-nav-link-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.nav-pills .btn-nav-link-payment {
+  color: #9d9fa3;
+  width: 160px;
+  border: #e1e5eb solid 1px;
+  padding: 12px 0;
+  /* height: 96px; */
+  border-radius: 16px;
+}
+
+.nav-pills .btn-nav-link-payment span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #f7f8fa;
+  background-color: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #9d9fa3;
+}
+.nav-pills .btn-nav-link-payment.active {
+  background-color: transparent;
+  color: #1b67e0;
+  /* font-size: 16px; */
+  font-weight: 500;
+  border: #1b67e0 solid 1px;
+}
+.nav-pills .btn-nav-link-payment.active span {
+  background-color: #1b67e01f;
+  color: #1b67e0;
+}
+.box-body-Bank-card {
+  margin-top: 2rem;
+}
+.box-body-Bank-card label {
+  color: #12171f;
+}
+.box-body-Bank-card .form-check-label {
+  font-size: 18px;
+  color: #5a5e66;
+}
+.btn-Pay-now-method-package {
+  background: linear-gradient(147deg, #2d51e0 0%, #2da4e0 74%);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: #fff !important;
+  width: 180px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-body-Bank-transfer {
+  margin-top: 2rem;
+}
+.box-body-Bank-transfer p {
+  color: #12171f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.items-Bank-transfer {
+  background-color: #f7f8fa;
+  padding: 24px;
+  border-radius: 1rem;
+}
+.items-Bank-transfer ul li {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: solid 1px #e1e5eb;
+}
+.items-Bank-transfer ul li:last-child {
+  border-bottom: solid 1px transparent;
+}
+.items-Bank-transfer h3 {
+  color: #5a5e66;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.items-Bank-transfer .item-tow-bank-transfer {
+  color: #12171f;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.items-Bank-transfer .item-tow-bank-transfer .icon-copy {
+  color: #1b67e099;
+  font-weight: 600;
+  font-size: 17px;
+}
+.xxxx {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5afeae;
+  border-radius: 99px;
+  font-size: 10px;
+  color: #292929;
+  font-weight: 500;
+  width: 90%;
+  text-align: center;
+  padding: 2px 12px;
+}
+.box-input-Transfer-receipt {
+  border: dashed #9d9fa3 1px;
+  border-radius: 12px;
+  height: 128px;
+}
+
+.box-Transfer-receipt {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.box-Transfer-receipt h2 {
+  color: #12171f;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+}
+.label-file-Transfer-receipt {
+  /* background-color: #1b67e0; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #12171f;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.label-file-Transfer-receipt span {
+  font-size: 24px;
+  color: #5a5e66;
+}
+.input-file-Transfer-receipt {
+  display: none;
+}
+
+.box-Subscription-price {
+  text-align: center;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 0 0 16px 16px;
+  border-top: #1b67e0 solid 8px;
+}
+.box-Subscription-price h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5a5e66;
+}
+.box-Subscription-price h3 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1b67e0;
+}
+.box-Subscription-price h3 span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5a5e66;
+}
+.box-discount-payment {
+  border-radius: 16px;
+  padding: 24px;
+  background-color: #fff;
+  margin-top: 1.8rem;
+}
+.box-discount-payment h2 {
+  font-size: 20px;
+  color: #12171f;
+  font-weight: 700;
+}
+.btn-application {
+  background-color: #1b67e01f !important;
+  width: 100%;
+  border-radius: 99px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1b67e0 !important;
+  padding: 8px 0;
+}
+
+
+
+  @media screen and (max-width: 767px) {
+  .box-nav-Upgrade-package h1 {
+    font-size: 24px;
+  }
+  .box-nav-Upgrade-package img {
+    width: 100px;
+  }
+  .box-items-Ambition-package-details h2,
+  .box-payment-method-package h2 {
+    font-size: 18px;
+  }
+  .nav-pills .btn-nav-link-payment {
+    width: 96px;
+  }
+  .nav-pills .btn-nav-link-payment span {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .nav-pills .btn-nav-link-payment {
+    font-size: 14px;
+  }
+  .box-payment-method-package {
+    padding: 12px;
+  }
+  .nav-pills .btn-nav-link-payment {
+    padding: 6px 0;
+  }
+  .btn-Pay-now-method-package {
+    background: linear-gradient(147deg, #2d51e0 0%, #2da4e0 74%);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #fff !important;
+    width: 140px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-payment-method-package {
+    margin-bottom: 2rem;
+  }
+  .box-Subscription-price h3 {
+    font-size: 48px;
+  }
+  .box-discount-payment h2 {
+    font-size: 18px;
+  }
+  .box-body-Bank-transfer p {
+    font-size: 14px;
+  }
+  .items-Bank-transfer .item-tow-bank-transfer {
+    font-size: 14px;
+  }
+  .logo-bank {
+    margin-bottom: 1rem;
+  }
+  .xxxx {
+    padding: 2px 5px;
+    width: 100%;
+
+    /* top: -44px; */
+  }
+  .nav-pills .btn-nav-link-payment {
+    width: 124px;
+  }
+}
+
+
+@media screen and (max-width: 452px) {
+  .nav-pills .btn-nav-link-payment {
+    width: 96px;
+  }
+  .xxxx {
+    top: -44px;
+  }
+}
+
+@media screen and  (min-width:767px) and (max-width:1120px) {
+  .nav-pills .btn-nav-link-payment {
+    width: 151px;
+  }
+}
